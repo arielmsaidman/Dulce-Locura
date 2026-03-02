@@ -34,12 +34,12 @@ titulo-principal{
 }
 
 /***mq mobile**********************************************/
-@media (max-width: 768px) {
+/**@media (max-width: 768px) {
      .titulo-principal{
-        <img src="imagenes/logo-DL1.png" alt="Portada conjunto deportivo" 
+        <img src="imagenes/logo-DL.png" alt="Portada conjunto deportivo" 
         <img src="image" alt="Portada conjunto deportivo" 
     }
-}
+}*/
 
 
 section.portada img { /* ajusta el tamaño de la imagen automaticamente*/
@@ -50,10 +50,10 @@ section.portada img { /* ajusta el tamaño de la imagen automaticamente*/
 }
 
 
-svg{
+/*svg{
     width: 100px; /*relacionado con los iconos de wps y de ig*/
-    height: 50px;
-}
+    /*height: 50px;
+}*/
 
 svg:hover{
     transform: scale(1.1);
@@ -269,4 +269,3 @@ footer{
 
 
 
- 
