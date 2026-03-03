@@ -25,7 +25,17 @@ header ul{
 }
 
 .yellow-bg{
-    background-color: chocolate;
+    background-color: rgb(241, 215, 128);
+}
+
+.yellow-bg li a:hover{
+    background-color: rgb(255, 175, 2);
+    
+}
+
+.yellow-bg li a:active{
+    background-color: rgb(253, 59, 0);
+    color: whitesmoke;
 }
 /**FIN HEADER*****************************************************************************/
 
