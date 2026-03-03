@@ -7,6 +7,7 @@
     list-style: none;       /*eliminar viñeta de las listas*/
 } 
 
+
 /***HEADER**************************************************************************************/
 
 header{
@@ -124,8 +125,26 @@ svg:hover{
     border: 1px solid black;
 }
 
+section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /*************mq celular*****************/
 @media (max-width: 768px) {
+   /* .menu-productos-destacados{
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .productos-destacados {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        border: 1px solid black;
+    }
+
+*/
     .menu-productos-destacados{
     grid-template-columns: 1fr 1fr ;
     }
@@ -180,11 +199,6 @@ svg:hover{
 
 
 /**********PAGINA DE CONJUNTOS DEPORTIVOS***********************************************************/
-section img { /* ajusta el tamaño de la imagen automaticamente, TAMBIEN TRAJES DE BAÑO*/
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
 .menu-principal-conjuntos-deportivos {
     padding-bottom: 50px;
