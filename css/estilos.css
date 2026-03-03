@@ -23,6 +23,10 @@ header ul{
     display: flex;
     gap: 20px;
 }
+
+.yellow-bg{
+    background-color: chocolate;
+}
 /**FIN HEADER*****************************************************************************/
 
 

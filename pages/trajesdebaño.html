@@ -13,33 +13,29 @@
     <!-- link de bootsrapt, es un CSS que esta en la nube --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- DEFINO FUENTE PARA EL TITULO -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-
 <body>
 
     <header>
 
+        <a href="../index.html" class="text-decoration-none  text-dark">  <!-- bootstrap paar poner en negro y sin subrayar  -->
+        <!-- <h1 class="titulo-principal pe-3 d-none d-md-block mb-0">DULCE LOCURA</h1> -->
+        <!-- <img src="imagenes/logo-DL.png" class="d-block d-md-none img-fluid  alt="LogoDulceLocura"> -->
+            <h1 class="titulo-principal">DULCE LOCURA</h1> <!-- <span> --> 
+        </a>
+
         <nav class="navbar navbar-expand navbar-light"  style="background-color: #FADBB2"> 
             <div class="container-fluid">
-               
-                <a href="../index.html" class="text-decoration-none text-dark">  <!-- bootstrap paar poner en negro y sin subrayar  -->
-                  <h1 class="titulo-principal pe-3 d-none d-md-block mb-0">DULCE LOCURA</h1>
-                </a>
-
                 <ul class="navbar-nav ms-auto d-flex flex-row align-items-center">
                     <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Productos
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <ul class="dropdown-menu yellow-bg">
+                                <li><a class="dropdown-item" href="../pages/conjuntosdeportivos.html">Conjutos deportivos</a></li>
+                                <li><a class="dropdown-item" href="../pages/sweaters.html">Sweaters</a></li>
+                                <li><a class="dropdown-item" href="../pages/accesorios.html">Accesorios</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="../index.html">Menu principal</a></li>
                             </ul>
                     </li>          
                     <li class="nav-item">
@@ -54,8 +50,7 @@
                     </li>       
                 </ul>
             </div>
-        </nav>
-        <!-- no pude poner los logos de wps de ig sobre la drecha de la pantalla -->
+        </nav>        
     </header>
 
     
