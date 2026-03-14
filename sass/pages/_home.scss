@@ -1,0 +1,222 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+
+//LISTAS
+@use "../utilities/listas" as *;
+
+//MIXIN
+@use "../utilities/mixin" as *;
+
+
+/***HEADER**************************************************************************************/
+
+header{    
+    @include flex;
+    background-color: nth($lista-colores , 1);
+    padding-right: 20px;
+    padding-left: 20px;
+
+    ul{
+    display: flex;
+    gap: 20px;
+    }
+
+    .yellow-bg{
+    background-color: nth($lista-colores , 2 );
+    }
+
+    .yellow-bg {
+        li{
+            a:hover{
+                background-color: nth($lista-colores , 3 );
+            }
+        }
+    }
+
+    .yellow-bg {
+        li{
+            a:active{
+                background-color: nth($lista-colores , 4 );
+                color: whitesmoke;
+                }   
+        }
+    }
+}
+
+/**FIN HEADER*****************************************************************************/
+
+main{
+    titulo-principal{
+        color: black;
+        font-family: "Sour Gummy", sans-serif;
+    }
+
+    section{
+        img{
+            .portada{
+                @include image;
+            }
+        }
+    }
+
+    svg{
+        width: 100px; /*relacionado con los iconos de wps y de ig*/
+        height: 50px;
+    }
+
+    svg:hover{
+        transform: scale(1.1);
+    }
+
+    .menu-principal{
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: grid;
+        @include grilla(1fr 1fr,repeat(2,auto));
+       gap: 4rem;
+
+        div{
+
+            img{ /* fuerzo a que las imagenes entren en su contenedor */
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+
+    }
+
+        /****PRODUCTOS DESTACADOS EN LA PAGINA PRINCIPAL****************************************************************/
+    .menu-productos-destacados {
+        display: grid;
+        @include grilla(repeat(4, 1fr),auto);
+        text-align: center; 
+        gap: 1rem;   
+
+        article{
+            img{
+                width: 100%;
+                max-width: 250px;   /* ajustá este número */
+                height: auto;
+                border: 1px solid black;
+            }
+        }
+    }
+    /*****MENU DE QUIENES SOMOS*********************************************************************/
+    /*poner en una misma linea*/
+    .quienes-somos{
+        display: grid;
+        @include grilla(1.5fr 1fr 1fr,auto);
+        background-color: $back-ground-quienes-somos;
+        margin: 5%;
+        padding: 1%;
+        justify-items: center;
+
+        div{
+            width: 72%;
+            align-content: space-between;
+        }
+
+        p{
+            span{
+                display: block; /*define el span*/
+            }
+        }          
+        
+    }
+
+    .descripcion{
+        padding-top: 25px;
+        text-align: justify;
+    }
+
+
+    
+    section { 
+        img {
+            @include image;
+           }
+
+    }
+
+   
+
+
+    /******PAGINA DE TRAJES DE BAÑO****************************************************************************/
+    .menu-principal-trajes-de-banio {
+        display: grid;
+        @include grilla(repeat(3, 1fr),repeat(2, auto));/* 2 filas * 3 columnas*/
+        
+        /* gap: 30px; controla separación real */
+        padding-bottom: 50px;
+        
+        article {
+            @include align;
+        }
+
+        img {
+            width: 70%;
+            display: block;
+            margin: 0 auto;/*centra elementos block con ancho definido.*/
+            border: 2px solid black;
+        }
+    }
+    /**********PAGINA DE CONJUNTOS DEPORTIVOS***********************************************************/
+
+    .menu-principal-conjuntos-deportivos {
+        padding-bottom: 50px;
+        display: grid;
+        @include grilla(repeat(3, 1fr),repeat(2, auto));/* 2 filas * 3 columnas*/
+        
+
+        article {
+            @include align;
+        }
+
+        img {
+            width: 70%;
+            display: block;
+            margin: 0 auto;/*centra elementos block con ancho definido.*/
+            border: 2px solid black;
+        }
+    }
+}
+
+
+          /*****MENU DEL FONDO *********************************************************************/
+
+    .menu-abajo{
+        background-color: $back-ground-menu-abajo;
+        padding-bottom: 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around ;
+
+        ul{
+            li{
+                a{
+                    color: white;
+                }  
+
+            }
+        }
+    }
+
+
+
+
+footer{
+    margin-top: -16px;
+    padding-left: 15px;
+    background-color: $back-ground-footer;
+    color: whitesmoke;
+    @include flex;
+ }
+

@@ -1,0 +1,244 @@
+@charset "UTF-8";
+* {
+  margin: 0; /* reset */
+  padding: 0; /* reset */
+  box-sizing: border-box; /* reset */
+  text-decoration: none; /*eliminar subrayado por defecto*/
+  list-style: none; /*eliminar viñeta de las listas*/
+}
+
+/***HEADER**************************************************************************************/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FEF157;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+header ul {
+  display: flex;
+  gap: 20px;
+}
+header .yellow-bg {
+  background-color: #B8E6D0;
+}
+header .yellow-bg li a:hover {
+  background-color: #FED06E;
+}
+header .yellow-bg li a:active {
+  background-color: #D99A91;
+  color: whitesmoke;
+}
+
+/**FIN HEADER*****************************************************************************/
+main titulo-principal {
+  color: black;
+  font-family: "Sour Gummy", sans-serif;
+}
+main section img .portada {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+main svg {
+  width: 100px; /*relacionado con los iconos de wps y de ig*/
+  height: 50px;
+}
+main svg:hover {
+  transform: scale(1.1);
+}
+main .menu-principal {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 4rem;
+}
+main .menu-principal div img { /* fuerzo a que las imagenes entren en su contenedor */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main .menu-principal div img:hover {
+  transform: scale(1.1);
+}
+main {
+  /****PRODUCTOS DESTACADOS EN LA PAGINA PRINCIPAL****************************************************************/
+}
+main .menu-productos-destacados {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  text-align: center;
+  gap: 1rem;
+}
+main .menu-productos-destacados article img {
+  width: 100%;
+  max-width: 250px; /* ajustá este número */
+  height: auto;
+  border: 1px solid black;
+}
+main {
+  /*****MENU DE QUIENES SOMOS*********************************************************************/
+  /*poner en una misma linea*/
+}
+main .quienes-somos {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: auto;
+  background-color: rgb(129, 129, 138);
+  margin: 5%;
+  padding: 1%;
+  justify-items: center;
+}
+main .quienes-somos div {
+  width: 72%;
+  align-content: space-between;
+}
+main .quienes-somos p span {
+  display: block; /*define el span*/
+}
+main .descripcion {
+  padding-top: 25px;
+  text-align: justify;
+}
+main section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+main {
+  /******PAGINA DE TRAJES DE BAÑO****************************************************************************/
+}
+main .menu-principal-trajes-de-banio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  /* 2 filas * 3 columnas*/
+  /* gap: 30px; controla separación real */
+  padding-bottom: 50px;
+}
+main .menu-principal-trajes-de-banio article {
+  text-align: center;
+  padding-top: 50px;
+}
+main .menu-principal-trajes-de-banio img {
+  width: 70%;
+  display: block;
+  margin: 0 auto; /*centra elementos block con ancho definido.*/
+  border: 2px solid black;
+}
+main {
+  /**********PAGINA DE CONJUNTOS DEPORTIVOS***********************************************************/
+}
+main .menu-principal-conjuntos-deportivos {
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  /* 2 filas * 3 columnas*/
+}
+main .menu-principal-conjuntos-deportivos article {
+  text-align: center;
+  padding-top: 50px;
+}
+main .menu-principal-conjuntos-deportivos img {
+  width: 70%;
+  display: block;
+  margin: 0 auto; /*centra elementos block con ancho definido.*/
+  border: 2px solid black;
+}
+
+/*****MENU DEL FONDO *********************************************************************/
+.menu-abajo {
+  background-color: rgb(71, 72, 82);
+  padding-bottom: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu-abajo ul li a {
+  color: white;
+}
+
+footer {
+  margin-top: -16px;
+  padding-left: 15px;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*************INDEX*****************/
+@media (max-width: 768px) {
+  main .menu-principal {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem;
+  }
+  main .menu-principal div img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+/*****PRODUCTOS DESTACADOS****************/
+@media (max-width: 768px) {
+  main .menu-productos-destacados {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+  main .productos-destacados {
+    width: 50%;
+    display: block;
+    max-width: 250px;
+    height: auto;
+    border: 1px solid black;
+    margin: 0 auto;
+  }
+  main .menu-productos-destacados article {
+    text-align: center;
+    padding-top: 18px;
+  }
+}
+/******QUIENES SOMOS*************************/
+@media (max-width: 768px) {
+  main .quienes-somos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(50%);
+  }
+  main .descripcion {
+    grid-column: 1/span 2;
+  }
+}
+/****TRAJES DE BAÑO************************/
+@media (max-width: 768px) {
+  main .menu-principal-trajes-de-banio {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  main .menu-principal-trajes-de-banio div img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+/****CONJUNTOS DEPORTIVOS**********/
+@media (max-width: 768px) {
+  main .menu-principal-conjuntos-deportivos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  main .menu-principal-conjuntos-deportivos div img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

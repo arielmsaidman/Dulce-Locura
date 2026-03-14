@@ -1,8 +1,7 @@
 *{  
-  
-   /* margin: 0;              /* reset */
-   /* padding: 0;             /* reset */
-   /* box-sizing: border-box; /* reset */
+    margin: 0;              /* reset */
+    padding: 0;             /* reset */
+    box-sizing: border-box; /* reset */
     text-decoration: none;  /*eliminar subrayado por defecto*/
     list-style: none;       /*eliminar viñeta de las listas*/
 } 
@@ -25,8 +24,8 @@ header ul{
     gap: 20px;
 }
 
-.yellow-bg{
-    background-color: rgb(241, 215, 128);
+.yellow-bg li{
+    background-color: rgb(241, 224, 128);
 }
 
 .yellow-bg li a:hover{
@@ -125,6 +124,7 @@ svg:hover{
     border: 1px solid black;
 }
 
+/* quienes somos*/
 section img {
   width: 100%;
   height: auto;
@@ -133,18 +133,7 @@ section img {
 
 /*************mq celular*****************/
 @media (max-width: 768px) {
-   /* .menu-productos-destacados{
-    grid-template-columns: 1fr 1fr;
-    }
-
-    .productos-destacados {
-        width: 100%;
-        max-width: 250px;
-        margin: 0 auto;
-        border: 1px solid black;
-    }
-
-*/
+   
     .menu-productos-destacados{
     grid-template-columns: 1fr 1fr ;
     }
@@ -164,19 +153,19 @@ section img {
 
 
 /******PAGINA DE TRAJES DE BAÑO****************************************************************************/
-.menu-principal-trajes-de-baño {
+.menu-principal-trajes-de-banio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);  /* 2 filas * 3 columnas*/
     /* gap: 30px; controla separación real */
     padding-bottom: 50px;
     }
 
-.menu-principal-trajes-de-baño article {
+.menu-principal-trajes-de-banio article {
     text-align: center;
     padding-top: 50px; 
 }
 
-.menu-principal-trajes-de-baño img {
+.menu-principal-trajes-de-banio img {
     width: 70%;
     display: block;
     margin: 0 auto;/*centra elementos block con ancho definido.*/
@@ -186,11 +175,11 @@ section img {
 
  /****mq celular******/
  @media (max-width: 768px) {
-     .menu-principal-trajes-de-baño{
+     .menu-principal-trajes-de-banio{
         grid-template-columns: repeat(2, 1fr); /* 3 filas * 2 columnas*/
         }
 
-       .menu-principal-trajes-de-baño div img{
+       .menu-principal-trajes-de-banio div img{
         width: 80%;
         display: block;
         margin: 0 auto;
@@ -293,7 +282,4 @@ footer{
     display: flex;
     align-items: center ;
  }
-
-
-
 
