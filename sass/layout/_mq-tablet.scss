@@ -1,1 +1,79 @@
+//VARIABLES
+@use "../utilities/variables" as *;
 
+//LISTAS
+@use "../utilities/listas" as *;
+
+//MIXIN
+@use "../utilities/mixin" as *;
+
+
+/*****PRODUCTOS DESTACADOS****************/
+@media (min-width: 768px) and (max-width: 1023px) {
+    main{
+        .menu-productos-destacados{
+            @include grilla(1fr 1fr, repeat(2, auto)); 
+        }
+
+        .productos-destacados {
+            width: 50%;
+            display: block;
+            max-width: 250px;
+            height: auto;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        .menu-productos-destacados article {
+            text-align: center;
+            padding-top: 18px; 
+        }
+    }
+}
+
+/****TRAJES DE BAÑO************************/
+@media (min-width: 768px) and (max-width: 1023px) {
+    main{
+        .menu-principal-trajes-de-banio{
+            @include grilla(repeat(2, 1fr),repeat(3, auto));
+            
+        }
+
+        .menu-principal-trajes-de-banio div img{
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+/****CONJUNTOS DEPORTIVOS**********/
+@media (min-width: 768px) and (max-width: 1023px) {
+    main{
+        .menu-principal-conjuntos-deportivos{
+            @include grilla(repeat(2, 1fr),repeat(3, auto));
+        }
+
+        .menu-principal-conjuntos-deportivos div img{
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+/****CONJUNTOS DEPORTIVOS**********/
+@media (min-width: 768px) and (max-width: 1023px) {
+    main{
+        .menu-principal-sweaters{
+            @include grilla(repeat(2, 1fr),repeat(3, auto));
+        }
+
+        .menu-principal-conjuntos-deportivos div img{
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

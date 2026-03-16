@@ -117,14 +117,14 @@ main .menu-principal-trajes-de-banio {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   /* 2 filas * 3 columnas*/
-  /* gap: 30px; controla separación real */
-  padding-bottom: 50px;
+  gap: 1rem;
+  padding: 50px 30px;
 }
-main .menu-principal-trajes-de-banio article {
-  text-align: center;
-  padding-top: 50px;
+main .menu-principal-trajes-de-banio div {
+  text-align: left;
+  padding-top: 10px;
 }
-main .menu-principal-trajes-de-banio img {
+main .menu-principal-trajes-de-banio div img {
   width: 70%;
   display: block;
   margin: 0 auto; /*centra elementos block con ancho definido.*/
@@ -134,17 +134,36 @@ main {
   /**********PAGINA DE CONJUNTOS DEPORTIVOS***********************************************************/
 }
 main .menu-principal-conjuntos-deportivos {
-  padding-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   /* 2 filas * 3 columnas*/
+  gap: 1rem;
+  padding: 50px 30px;
 }
-main .menu-principal-conjuntos-deportivos article {
-  text-align: center;
-  padding-top: 50px;
+main .menu-principal-conjuntos-deportivos div {
+  text-align: left;
+  padding-top: 10px;
 }
-main .menu-principal-conjuntos-deportivos img {
+main .menu-principal-conjuntos-deportivos div img {
+  width: 70%;
+  display: block;
+  margin: 0 auto; /*centra elementos block con ancho definido.*/
+  border: 2px solid black;
+}
+main .menu-principal-sweaters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  /* 2 filas * 3 columnas*/
+  gap: 1rem;
+  padding: 50px 30px;
+}
+main .menu-principal-sweaters div {
+  text-align: left;
+  padding-top: 10px;
+}
+main .menu-principal-sweaters div img {
   width: 70%;
   display: block;
   margin: 0 auto; /*centra elementos block con ancho definido.*/
@@ -190,8 +209,8 @@ footer {
 /*****PRODUCTOS DESTACADOS****************/
 @media (max-width: 768px) {
   main .menu-productos-destacados {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
   }
   main .productos-destacados {
     width: 50%;
@@ -219,8 +238,10 @@ footer {
 /****TRAJES DE BAÑO************************/
 @media (max-width: 768px) {
   main .menu-principal-trajes-de-banio {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 1rem;
+    padding: 50px 30px;
   }
   main .menu-principal-trajes-de-banio div img {
     width: 80%;
@@ -231,6 +252,86 @@ footer {
 /****CONJUNTOS DEPORTIVOS**********/
 @media (max-width: 768px) {
   main .menu-principal-conjuntos-deportivos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 1rem;
+    padding: 50px 30px;
+  }
+  main div {
+    text-align: left;
+    padding-top: 10px;
+  }
+  main div img {
+    width: 80%;
+    display: block;
+    margin: 0 auto; /*centra elementos block con ancho definido.*/
+    border: 2px solid black;
+  }
+}
+@media (max-width: 768px) {
+  main .menu-principal-sweaters {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 1rem;
+    padding: 50px 30px;
+  }
+  main div {
+    text-align: left;
+    padding-top: 10px;
+  }
+  main div img {
+    width: 80%;
+    display: block;
+    margin: 0 auto; /*centra elementos block con ancho definido.*/
+    border: 2px solid black;
+  }
+}
+/*****PRODUCTOS DESTACADOS****************/
+@media (min-width: 768px) and (max-width: 1023px) {
+  main .menu-productos-destacados {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+  main .productos-destacados {
+    width: 50%;
+    display: block;
+    max-width: 250px;
+    height: auto;
+    border: 1px solid black;
+    margin: 0 auto;
+  }
+  main .menu-productos-destacados article {
+    text-align: center;
+    padding-top: 18px;
+  }
+}
+/****TRAJES DE BAÑO************************/
+@media (min-width: 768px) and (max-width: 1023px) {
+  main .menu-principal-trajes-de-banio {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  main .menu-principal-trajes-de-banio div img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+/****CONJUNTOS DEPORTIVOS**********/
+@media (min-width: 768px) and (max-width: 1023px) {
+  main .menu-principal-conjuntos-deportivos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  main .menu-principal-conjuntos-deportivos div img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+/****CONJUNTOS DEPORTIVOS**********/
+@media (min-width: 768px) and (max-width: 1023px) {
+  main .menu-principal-sweaters {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
   }

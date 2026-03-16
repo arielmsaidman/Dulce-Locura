@@ -145,45 +145,58 @@ main{
 
     }
 
-   
-
 
     /******PAGINA DE TRAJES DE BAÑO****************************************************************************/
     .menu-principal-trajes-de-banio {
         display: grid;
         @include grilla(repeat(3, 1fr),repeat(2, auto));/* 2 filas * 3 columnas*/
-        
-        /* gap: 30px; controla separación real */
-        padding-bottom: 50px;
-        
-        article {
-            @include align;
-        }
+        @include separacion;
 
-        img {
-            width: 70%;
-            display: block;
-            margin: 0 auto;/*centra elementos block con ancho definido.*/
-            border: 2px solid black;
+        div{
+            @include align;
+             
+            img {
+                width: 70%;
+                display: block;
+                margin: 0 auto;/*centra elementos block con ancho definido.*/
+                border: 2px solid black;
+            }
         }
     }
+    
     /**********PAGINA DE CONJUNTOS DEPORTIVOS***********************************************************/
 
     .menu-principal-conjuntos-deportivos {
-        padding-bottom: 50px;
         display: grid;
         @include grilla(repeat(3, 1fr),repeat(2, auto));/* 2 filas * 3 columnas*/
-        
+        @include separacion;
 
-        article {
+        div{
             @include align;
+             
+            img {
+                width: 70%;
+                display: block;
+                margin: 0 auto;/*centra elementos block con ancho definido.*/
+                border: 2px solid black;
+            }
         }
+    }
 
-        img {
-            width: 70%;
-            display: block;
-            margin: 0 auto;/*centra elementos block con ancho definido.*/
-            border: 2px solid black;
+    .menu-principal-sweaters {
+        display: grid;
+        @include grilla(repeat(3, 1fr),repeat(2, auto));/* 2 filas * 3 columnas*/
+        @include separacion;
+
+        div{
+            @include align;
+             
+            img {
+                width: 70%;
+                display: block;
+                margin: 0 auto;/*centra elementos block con ancho definido.*/
+                border: 2px solid black;
+            }
         }
     }
 }

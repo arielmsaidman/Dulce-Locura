@@ -16,11 +16,16 @@
 }
 
 @mixin align{
-    text-align: center;
-    padding-top: 50px; 
+    text-align: left;
+    padding-top: 10px; 
 }
 
-
+@mixin separacion{
+    gap: 1rem;  
+    padding: 50px 30px;
+    //arriba / abajo = 50px
+    //izquierda / derecha = 30px
+}
 
 
 
