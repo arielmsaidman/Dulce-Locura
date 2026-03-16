@@ -151,6 +151,9 @@ main .menu-principal-conjuntos-deportivos div img {
   margin: 0 auto; /*centra elementos block con ancho definido.*/
   border: 2px solid black;
 }
+main {
+  /**********PAGINA DE SWEATERS***********************************************************/
+}
 main .menu-principal-sweaters {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -164,6 +167,27 @@ main .menu-principal-sweaters div {
   padding-top: 10px;
 }
 main .menu-principal-sweaters div img {
+  width: 70%;
+  display: block;
+  margin: 0 auto; /*centra elementos block con ancho definido.*/
+  border: 2px solid black;
+}
+main {
+  /**********PAGINA DE ACCESORIOS***********************************************************/
+}
+main .menu-principal-accesorios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  /* 2 filas * 3 columnas*/
+  gap: 1rem;
+  padding: 50px 30px;
+}
+main .menu-principal-accesorios div {
+  text-align: left;
+  padding-top: 10px;
+}
+main .menu-principal-accesorios div img {
   width: 70%;
   display: block;
   margin: 0 auto; /*centra elementos block con ancho definido.*/
