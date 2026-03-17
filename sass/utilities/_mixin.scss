@@ -26,7 +26,13 @@
     //arriba / abajo = 50px
     //izquierda / derecha = 30px
 }
-
+@mixin image-productos{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black
+}
+ 
 
 
 

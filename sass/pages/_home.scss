@@ -10,19 +10,26 @@
 
 /***HEADER**************************************************************************************/
 
-header{    
+header{
+
+    .titulo-principal{
+        color: black;
+        font-family: Candara, Calibri, Segoe UI, Arial, sans-serif;
+        font-size: 4rem;
+    }
+    
     @include flex;
     background-color: nth($lista-colores , 1);
     padding-right: 20px;
     padding-left: 20px;
 
     ul{
-    display: flex;
-    gap: 20px;
+        display: flex;
+        gap: 20px;
     }
 
     .yellow-bg{
-    background-color: nth($lista-colores , 2 );
+        background-color: nth($lista-colores , 2 );
     }
 
     .yellow-bg {
@@ -37,7 +44,7 @@ header{
         li{
             a:active{
                 background-color: nth($lista-colores , 4 );
-                color: whitesmoke;
+                color: $letter-colour;
                 }   
         }
     }
@@ -46,11 +53,7 @@ header{
 /**FIN HEADER*****************************************************************************/
 
 main{
-    titulo-principal{
-        color: black;
-        font-family: "Sour Gummy", sans-serif;
-    }
-
+   
     section{
         img{
             .portada{
@@ -156,10 +159,7 @@ main{
             @include align;
              
             img {
-                width: 70%;
-                display: block;
-                margin: 0 auto;/*centra elementos block con ancho definido.*/
-                border: 2px solid black;
+                @include image-productos;
             }
         }
     }
@@ -175,10 +175,7 @@ main{
             @include align;
              
             img {
-                width: 70%;
-                display: block;
-                margin: 0 auto;/*centra elementos block con ancho definido.*/
-                border: 2px solid black;
+                @include image-productos;
             }
         }
     }
@@ -194,10 +191,7 @@ main{
             @include align;
              
             img {
-                width: 70%;
-                display: block;
-                margin: 0 auto;/*centra elementos block con ancho definido.*/
-                border: 2px solid black;
+                @include image-productos;
             }
         }
     }
@@ -213,10 +207,7 @@ main{
             @include align;
              
             img {
-                width: 70%;
-                display: block;
-                margin: 0 auto;/*centra elementos block con ancho definido.*/
-                border: 2px solid black;
+                @include image-productos;
             }
         }
     }
@@ -228,24 +219,39 @@ main{
 
     .menu-abajo{
         background-color: $back-ground-menu-abajo;
-        padding-bottom: 20px;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: space-around ;
+    padding: 30px 20px; /* mejor que solo bottom */
+    color: $letter-colour;
+
+    display: flex;
+    justify-content: space-around; /* más limpio */
+    align-items: flex-start; /* CLAVE */
+    flex-wrap: wrap; /* para responsive */
+    gap: 2rem;
+       // background-color: $back-ground-menu-abajo;
+        //padding-bottom: 20px;
+       // color: $letter-colour;
+       // display: flex;
+        //align-items: center;
+        //justify-content: space-around ;
 
         ul{
+           a{
+            color: $letter-colour;
+            text-decoration: none;
+           }
             li{
+                h4{
+                    margin-bottom: 10px;
+                }
+               
                 a{
-                    color: white;
+                    color: $letter-colour;
+                    text-decoration: none;
                 }  
 
             }
         }
     }
-
-
-
 
 footer{
     margin-top: -16px;

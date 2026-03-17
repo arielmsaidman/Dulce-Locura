@@ -8,6 +8,11 @@
 }
 
 /***HEADER**************************************************************************************/
+header .titulo-principal {
+  color: black;
+  font-family: Candara, Calibri, Segoe UI, Arial, sans-serif;
+  font-size: 4rem;
+}
 header {
   display: flex;
   align-items: center;
@@ -32,10 +37,6 @@ header .yellow-bg li a:active {
 }
 
 /**FIN HEADER*****************************************************************************/
-main titulo-principal {
-  color: black;
-  font-family: "Sour Gummy", sans-serif;
-}
 main section img .portada {
   width: 100%;
   height: auto;
@@ -125,9 +126,9 @@ main .menu-principal-trajes-de-banio div {
   padding-top: 10px;
 }
 main .menu-principal-trajes-de-banio div img {
-  width: 70%;
+  width: 80%;
   display: block;
-  margin: 0 auto; /*centra elementos block con ancho definido.*/
+  margin: 0 auto;
   border: 2px solid black;
 }
 main {
@@ -146,9 +147,9 @@ main .menu-principal-conjuntos-deportivos div {
   padding-top: 10px;
 }
 main .menu-principal-conjuntos-deportivos div img {
-  width: 70%;
+  width: 80%;
   display: block;
-  margin: 0 auto; /*centra elementos block con ancho definido.*/
+  margin: 0 auto;
   border: 2px solid black;
 }
 main {
@@ -167,9 +168,9 @@ main .menu-principal-sweaters div {
   padding-top: 10px;
 }
 main .menu-principal-sweaters div img {
-  width: 70%;
+  width: 80%;
   display: block;
-  margin: 0 auto; /*centra elementos block con ancho definido.*/
+  margin: 0 auto;
   border: 2px solid black;
 }
 main {
@@ -188,23 +189,33 @@ main .menu-principal-accesorios div {
   padding-top: 10px;
 }
 main .menu-principal-accesorios div img {
-  width: 70%;
+  width: 80%;
   display: block;
-  margin: 0 auto; /*centra elementos block con ancho definido.*/
+  margin: 0 auto;
   border: 2px solid black;
 }
 
 /*****MENU DEL FONDO *********************************************************************/
 .menu-abajo {
   background-color: rgb(71, 72, 82);
-  padding-bottom: 20px;
-  color: white;
+  padding: 30px 20px; /* mejor que solo bottom */
+  color: whitesmoke;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; /* más limpio */
+  align-items: flex-start; /* CLAVE */
+  flex-wrap: wrap; /* para responsive */
+  gap: 2rem;
+}
+.menu-abajo ul a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.menu-abajo ul li h4 {
+  margin-bottom: 10px;
 }
 .menu-abajo ul li a {
-  color: white;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 footer {
@@ -267,10 +278,15 @@ footer {
     gap: 1rem;
     padding: 50px 30px;
   }
-  main .menu-principal-trajes-de-banio div img {
+  main div {
+    text-align: left;
+    padding-top: 10px;
+  }
+  main div img {
     width: 80%;
     display: block;
     margin: 0 auto;
+    border: 2px solid black;
   }
 }
 /****CONJUNTOS DEPORTIVOS**********/
@@ -288,10 +304,11 @@ footer {
   main div img {
     width: 80%;
     display: block;
-    margin: 0 auto; /*centra elementos block con ancho definido.*/
+    margin: 0 auto;
     border: 2px solid black;
   }
 }
+/****CONJUNTOS SWEATERS**********/
 @media (max-width: 768px) {
   main .menu-principal-sweaters {
     grid-template-columns: 1fr;
@@ -306,8 +323,33 @@ footer {
   main div img {
     width: 80%;
     display: block;
-    margin: 0 auto; /*centra elementos block con ancho definido.*/
+    margin: 0 auto;
     border: 2px solid black;
+  }
+}
+/****CONJUNTOS ACCESORIOS**********/
+@media (max-width: 768px) {
+  main .menu-principal-accesorios {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 1rem;
+    padding: 50px 30px;
+  }
+  main div {
+    text-align: left;
+    padding-top: 10px;
+  }
+  main div img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+  }
+}
+@media (max-width: 768px) {
+  section .menu-abajo {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 /*****PRODUCTOS DESTACADOS****************/
@@ -339,6 +381,7 @@ footer {
     width: 80%;
     display: block;
     margin: 0 auto;
+    border: 2px solid black;
   }
 }
 /****CONJUNTOS DEPORTIVOS**********/
@@ -351,18 +394,33 @@ footer {
     width: 80%;
     display: block;
     margin: 0 auto;
+    border: 2px solid black;
   }
 }
-/****CONJUNTOS DEPORTIVOS**********/
+/****SWEATERS**********/
 @media (min-width: 768px) and (max-width: 1023px) {
   main .menu-principal-sweaters {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
   }
-  main .menu-principal-conjuntos-deportivos div img {
+  main .menu-principal-sweaters div img {
     width: 80%;
     display: block;
     margin: 0 auto;
+    border: 2px solid black;
+  }
+}
+/****ACCESORIOS**********/
+@media (min-width: 768px) and (max-width: 1023px) {
+  main .menu-principal-accesorios {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  main .menu-principal-accesorios div img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
   }
 }
 

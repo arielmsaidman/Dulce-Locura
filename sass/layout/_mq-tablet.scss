@@ -37,12 +37,11 @@
         .menu-principal-trajes-de-banio{
             @include grilla(repeat(2, 1fr),repeat(3, auto));
             
-        }
-
-        .menu-principal-trajes-de-banio div img{
-            width: 80%;
-            display: block;
-            margin: 0 auto;
+            div{
+                img{
+                    @include image-productos;
+                }
+            }
         }
     }
 }
@@ -52,28 +51,43 @@
     main{
         .menu-principal-conjuntos-deportivos{
             @include grilla(repeat(2, 1fr),repeat(3, auto));
-        }
-
-        .menu-principal-conjuntos-deportivos div img{
-            width: 80%;
-            display: block;
-            margin: 0 auto;
+            
+            div{
+                img{
+                    @include image-productos;
+                }
+            }
         }
     }
 }
 
 
-/****CONJUNTOS DEPORTIVOS**********/
+/****SWEATERS**********/
 @media (min-width: 768px) and (max-width: 1023px) {
     main{
         .menu-principal-sweaters{
             @include grilla(repeat(2, 1fr),repeat(3, auto));
+            
+            div{
+                img{
+                    @include image-productos;
+                }
+            }
         }
+    }
+}
 
-        .menu-principal-conjuntos-deportivos div img{
-            width: 80%;
-            display: block;
-            margin: 0 auto;
+/****ACCESORIOS**********/
+@media (min-width: 768px) and (max-width: 1023px) {
+    main{
+        .menu-principal-accesorios{
+            @include grilla(repeat(2, 1fr),repeat(3, auto));
+            
+            div{
+                img{
+                    @include image-productos;
+                }
+            }
         }
     }
 }
