@@ -15,15 +15,11 @@
     
 </head>
 
-<body>
+<body class="bg-contacto">
 
     <header>
 
-       <a href="../index.html" class="text-decoration-none  text-dark">  <!-- bootstrap paar poner en negro y sin subrayar  -->
-        <!-- <h1 class="titulo-principal pe-3 d-none d-md-block mb-0">DULCE LOCURA</h1> -->
-        <!-- <img src="imagenes/logo-DL.png" class="d-block d-md-none img-fluid  alt="LogoDulceLocura"> -->
-            <h1 class="titulo-principal">DULCE LOCURA</h1> <!-- <span> --> 
-        </a>
+        <a href="../index.html" class="titulo-principal text-decoration-none text-dark">DULCE LOCURA</a>
 
         <nav class="navbar navbar-expand navbar-light" > 
             <div class="container-fluid">
@@ -62,69 +58,80 @@
 
     <main>
         
-        <h1>Contacto</h1>
-        <p>
+        
+        <section class="imagen-portada-contacto">
+            <!-- PORTADA -->
+            <img  class="img-fluid" src="../imagenes/Contacto/portada.png">
+            
+        </section>
+
+        <p class="pt-5 ps-3 pb-3">
             Si tenés alguna consulta, duda o necesitás más información, no dudes en contactarnos.
             Estamos para ayudarte y responderemos a la brevedad.
         </p>
 
-        <h5>
-            Nombre y apellido:
-        </h5>
+        <!--Nombre y Apellido -->
+        <div class="NombreApellido mb-3 ps-3 ">
+            <label for="nombre" class="col-2 col-md-4"><h5>Nombre y Apellido: </h5></label>
+            <input type="text" class="form-control " style="max-width: 25%;" id="nombre" name="nombre">   
+        </div>      
 
-        <h5 class="email">
-            Email: 
-        </h5>
-
-        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
-
-        
-
-
-        <div class="mb-3 d-flex align-items-center gap-2">
-        <label for="email" class="form-label mb-0">Correo:</label>
-        <input type="email" class="form-control w-auto" id="email" placeholder="nombre@ejemplo.com" required>
+        <!--Email  -->
+        <div class="mb-3 d-flex align-items-center gap-2 ps-3">
+            <label for="email" class="form-label mb-0 col-2"><h5>Email:</h5></label>
+            <input type="email" class="form-control" style="max-width: 25%;" id="email" placeholder="nombre@ejemplo.com" required>
         </div>
 
-        <h5>
-           Motivo del mensaje:
-        </h5>
-       
-        <form>
-            <label>
-                <input type="radio" name="Consulta" value="1">
-                Consulta
-            </label><br>
-
-            <label>
-                <input type="radio" name="Reclamo" value="2">
-                Reclamo
-            </label><br>
-
-            <label>
-                <input type="radio" name="Sugerencia" value="3">
-                Sugerencia
-            </label><br>
-
-            <label>
-                <input type="radio" name="Otro" value="4">
-                Otro
-            </label>
-        </form>
-
-        <form>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-
-        <h5>
-           Escribe tu mensaje:
-        </h5>
 
 
+
+        <!-- Motivo del Mensaje -->  
+        <div class="mb-3 d-flex gap-2 ps-3">
+            <label for="mensaje" class="form-label col-2"><h5>Motivo del Mensaje:</h5></label>
+            <form>
+                <label>
+                    <input type="radio" name="motivo" value="1">
+                    Consulta
+                </label><br>
+
+                <label>
+                    <input type="radio" name="motivo" value="2">
+                    Reclamo
+                </label><br>
+
+                <label>
+                    <input type="radio" name="motivo" value="3">
+                    Sugerencia
+                </label><br>
+
+                <label class="pb-1">
+                    <input type="radio" name="motivo" value="4">
+                    Otro
+                </label><br>
+           
+                <button type="submit" class="boton-enviar">Enviar</button>
+            </form> 
+        </div>
+
+
+
+
+
+        <!-- Escriba su Mensaje -->        
+        <div class="mb-3 d-flex gap-2 ps-3">
+            <label for="mensaje" class="form-label col-2"><h5>Escriba su Mensaje:</h5></label>
+            <textarea  class="form-control"  id="mensaje"  style="max-width: 30%;" maxlength="244" placeholder="Escribí tu mensaje (máx. 244 caracteres)" required></textarea>
+        </div>
+
+
+
+
+        
+    
         
     </main>
 
-    <section class="menu-abajo">
+    <section class=" mt-5 menu-abajo">
         
         <ul>
             <li><h4>Productos</h4></li>

@@ -37,6 +37,11 @@ header .yellow-bg li a:active {
 }
 
 /**FIN HEADER*****************************************************************************/
+/*********FONDO PAGINA CONTACTO****************/
+.bg-contacto {
+  background-color: #e4e4db;
+}
+
 main section img .portada {
   width: 100%;
   height: auto;
@@ -197,6 +202,29 @@ main .menu-principal-accesorios div img {
 main .email {
   display: flex;
 }
+main {
+  /***
+
+  /**********PAGINA DE CONTACTO***********************************************************/
+}
+main .NombreApellido {
+  display: flex;
+  gap: 10px;
+}
+main .boton-enviar {
+  background-color: rgb(129, 129, 138); /* color */
+  color: whitesmoke; /* texto */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+}
+main .boton-enviar:active {
+  background-color: rgb(71, 72, 82); /* color */
+  color: whitesmoke; /* texto */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+}
 
 /*****MENU DEL FONDO *********************************************************************/
 .menu-abajo {
@@ -231,6 +259,12 @@ footer {
   justify-content: space-between;
 }
 
+/***TITULO PRINCIPAL*******************/
+@media (max-width: 768px) {
+  header .titulo-principal {
+    font-size: 29px;
+  }
+}
 /*************INDEX*****************/
 @media (max-width: 768px) {
   main .menu-principal {
@@ -349,6 +383,17 @@ footer {
     border: 2px solid black;
   }
 }
+/****CONTACTO**********/
+@media (max-width: 768px) {
+  .NombreApellido {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .NombreApellido input {
+    max-width: 100%;
+  }
+}
+/*****MENU DE ABAJO**************************/
 @media (max-width: 768px) {
   section .menu-abajo {
     flex-direction: column;

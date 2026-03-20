@@ -7,6 +7,16 @@
 //MIXIN
 @use "../utilities/mixin" as *;
 
+
+/***TITULO PRINCIPAL*******************/
+@media (max-width: 768px) {
+    header{
+        .titulo-principal{
+            font-size: 29px;
+        }
+    }
+}
+
 /*************INDEX*****************/
 @media (max-width: 768px) {
     main{
@@ -62,7 +72,7 @@
 }
 
 /****TRAJES DE BAÑO************************/
-@media (max-width: 768px) {
+@media (max-width: 768px) {   
     main{
         .menu-principal-trajes-de-banio{
              @include grilla(1fr ,repeat(6, auto));
@@ -135,6 +145,22 @@
     }
 }
 
+/****CONTACTO**********/
+@media (max-width: 768px) {
+  .NombreApellido {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .NombreApellido input {
+    max-width: 100%;
+  }
+  
+}
+
+
+
+/*****MENU DE ABAJO**************************/
 @media (max-width: 768px) {
     section{
         .menu-abajo {

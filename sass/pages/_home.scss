@@ -9,7 +9,7 @@
 
 
 /***HEADER**************************************************************************************/
-
+ 
 header{
 
     .titulo-principal{
@@ -51,6 +51,12 @@ header{
 }
 
 /**FIN HEADER*****************************************************************************/
+
+/*********FONDO PAGINA CONTACTO****************/
+.bg-contacto{
+        background-color: #e4e4db;
+    }
+
 
 main{
    
@@ -215,23 +221,52 @@ main{
     .email{
         display: flex;
     }
-    
-}
+    /***
 
+    /**********PAGINA DE CONTACTO***********************************************************/
+
+    .NombreApellido{
+        display: flex;
+    
+    gap: 10px;
+
+    }
+
+
+
+
+    .boton-enviar {
+        background-color: $back-ground-quienes-somos;  /* color */
+        color: $letter-colour;              /* texto */
+        padding: 10px 20px;         
+        border: none;              
+        border-radius: 8px;       
+    }
+
+    .boton-enviar:active{
+        background-color: $back-ground-menu-abajo;  /* color */
+        color: $letter-colour;              /* texto */
+        padding: 10px 20px;         
+        border: none;              
+        border-radius: 8px;         
+    }
+}   
+ 
+    
 
           /*****MENU DEL FONDO *********************************************************************/
 
-    .menu-abajo{
+.menu-abajo{
         background-color: $back-ground-menu-abajo;
-    padding: 30px 20px; /* mejor que solo bottom */
-    color: $letter-colour;
+        padding: 30px 20px; /* mejor que solo bottom */
+        color: $letter-colour;
 
-    display: flex;
-    justify-content: space-around; /* más limpio */
-    align-items: flex-start; /* CLAVE */
-    flex-wrap: wrap; /* para responsive */
-    gap: 2rem;
-       // background-color: $back-ground-menu-abajo;
+        display: flex;
+        justify-content: space-around; /* más limpio */
+        align-items: flex-start; /* CLAVE */
+        flex-wrap: wrap; /* para responsive */
+        gap: 2rem;
+        // background-color: $back-ground-menu-abajo;
         //padding-bottom: 20px;
        // color: $letter-colour;
        // display: flex;
@@ -255,7 +290,7 @@ main{
 
             }
         }
-    }
+}
 
 footer{
     margin-top: -16px;
