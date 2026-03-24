@@ -147,17 +147,23 @@
 
 /****CONTACTO**********/
 @media (max-width: 768px) {
-  .NombreApellido {
+  .contacto {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .NombreApellido input {
+  .contacto input {
     max-width: 100%;
   }
-  
+
 }
 
+@media (max-width: 768px){
+    .mensaje{
+        display: flex;
+       
+    }
+}
 
 
 /*****MENU DE ABAJO**************************/
