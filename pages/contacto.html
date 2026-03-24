@@ -71,23 +71,24 @@
         </p>
 
         <!--Nombre y Apellido -->
-        <div class="NombreApellido mb-3 ps-3 ">
-            <label for="nombre" class="col-2 col-md-4"><h5>Nombre y Apellido: </h5></label>
-            <input type="text" class="form-control " style="max-width: 25%;" id="nombre" name="nombre">   
+        <div class="NombreApellido d-flex  mb-3 ps-3 ">
+            <label for="nombre" class="col-8 col-md-2 "><h5>Nombre y Apellido: </h5></label>
+            <input type="text" class="form-control " style="max-width: 40%;" id="nombre" name="nombre" placeholder="Maria Lopez" required>   
         </div>      
 
         <!--Email  -->
-        <div class="mb-3 d-flex align-items-center gap-2 ps-3">
-            <label for="email" class="form-label mb-0 col-2"><h5>Email:</h5></label>
-            <input type="email" class="form-control" style="max-width: 25%;" id="email" placeholder="nombre@ejemplo.com" required>
+        <!-- <div class="mb-3 d-flex align-items-center gap-2 ps-3"> -->
+        <div class=" NombreApellido mb-3 d-flex ps-3">
+            <label for="email" class="form-label mb-0 col-8 col-md-2"><h5>Email:</h5></label>
+            <input type="email" class="form-control" style="max-width: 40%;" id="email" placeholder="nombre@ejemplo.com" required>
         </div>
 
 
 
 
         <!-- Motivo del Mensaje -->  
-        <div class="mb-3 d-flex gap-2 ps-3">
-            <label for="mensaje" class="form-label col-2"><h5>Motivo del Mensaje:</h5></label>
+        <div class="NombreApellido mb-3 d-flex gap-2 ps-3">
+            <label for="mensaje" class="form-label mb-0 col-8 col-md-2"><h5>Motivo del Mensaje:</h5></label>
             <form>
                 <label>
                     <input type="radio" name="motivo" value="1">
@@ -118,9 +119,9 @@
 
 
         <!-- Escriba su Mensaje -->        
-        <div class="mb-3 d-flex gap-2 ps-3">
-            <label for="mensaje" class="form-label col-2"><h5>Escriba su Mensaje:</h5></label>
-            <textarea  class="form-control"  id="mensaje"  style="max-width: 30%;" maxlength="244" placeholder="Escribí tu mensaje (máx. 244 caracteres)" required></textarea>
+        <div  class="NombreApellido mb-3 d-flex ps-3">
+            <label for="mensaje" class="form-label mb-0 col-8 col-md-2"><h5>Escriba su Mensaje:</h5></label>
+            <textarea  class="form-control"  id="mensaje"  style="max-width: 40%;" maxlength="244" placeholder="Escribí tu mensaje (máx. 244 caracteres)" required></textarea>
         </div>
 
 

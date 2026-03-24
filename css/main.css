@@ -206,10 +206,13 @@ main {
   /***
 
   /**********PAGINA DE CONTACTO***********************************************************/
-}
-main .NombreApellido {
-  display: flex;
-  gap: 10px;
+  /*/ .contacto{
+          display: flex;
+
+      gap: 10px;
+
+      }
+  */
 }
 main .boton-enviar {
   background-color: rgb(129, 129, 138); /* color */
