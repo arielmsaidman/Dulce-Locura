@@ -22,7 +22,7 @@
 <body>
     <header>
         
-       <a class="titulo-principal text-decoration-none text-dark">DULCE LOCURA</a> <span> 
+        <a class="titulo-principal text-decoration-none text-dark" href="../index.html">DULCE LOCURA</a> <span> 
 
         <nav class="navbar navbar-expand navbar-light" > 
             <div class="container-fluid">
@@ -32,14 +32,18 @@
                             Productos
                             </a>
                             <ul class="dropdown-menu yellow-bg">
-                                <li><a class="dropdown-item" href="trajesdebanio.html">Trajes de Baño</a></li>
+                                <li><a class="dropdown-item" href="trajesdebanio.html">Trajes de baño</a></li>
                                 <li><a class="dropdown-item" href="sweaters.html">Sweaters</a></li>
                                 <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="../index.html">Menu principal</a></li>
-                                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                                <li><a class="dropdown-item d-lg-none" href="contacto.html">Contacto</a></li> <!-- solo aparece en mq -->
                             </ul>
                     </li>   
+
+                    <li class="nav-item d-none d-lg-block"><!-- solo aparece en deskop -->
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                           
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.instagram.com/dulcelocura96/" target="_blank">
@@ -54,7 +58,7 @@
                     </li>       
                 </ul>
             </div>
-        </nav>   
+        </nav>     
         
     </header>
 
