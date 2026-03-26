@@ -202,17 +202,9 @@ main .menu-principal-accesorios div img {
 main .email {
   display: flex;
 }
-main {
-  /***
-
-  /**********PAGINA DE CONTACTO***********************************************************/
-  /*/ .contacto{
-          display: flex;
-
-      gap: 10px;
-
-      }
-  */
+main .contacto {
+  display: flex;
+  gap: 10px;
 }
 main .boton-enviar {
   background-color: rgb(129, 129, 138); /* color */
@@ -265,7 +257,7 @@ footer {
 /***TITULO PRINCIPAL*******************/
 @media (max-width: 768px) {
   header .titulo-principal {
-    font-size: 29px;
+    font-size: 36px;
   }
 }
 /*************INDEX*****************/
@@ -388,12 +380,17 @@ footer {
 }
 /****CONTACTO**********/
 @media (max-width: 768px) {
-  .NombreApellido {
+  .contacto {
     flex-direction: column;
     align-items: flex-start;
   }
-  .NombreApellido input {
+  .contacto input {
     max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .mensaje {
+    display: flex;
   }
 }
 /*****MENU DE ABAJO**************************/

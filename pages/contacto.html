@@ -70,17 +70,19 @@
         </p>
 
         <!--Nombre y Apellido -->
-        <div class="contacto row mb-3 ps-3 align-items-center">
-            <label for="nombre" class="col-12 col-md-2"><h5>Nombre y Apellido:</h5></label>
-            <div class="col-6 col-md-5">
+        <div class="contacto row mb-3 ps-3 ">
+            <label for="nombre" class="col-12 col-md-2 ">
+                <h5>Nombre y Apellido:</h5>
+            </label>
+            <div class="col-8 col-md-5 ps-md-0  ">
                 <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Maria Lopez" required>
             </div>
         </div>
 
         <!--Email  -->
-          <div class="contacto row mb-3 ps-3 align-items-center">
+        <div class="contacto row mb-3 ps-3 ">
             <label for="email" class="form-label col-12 col-md-2"><h5>Email:</h5></label>
-            <div class="col-6 col-md-5">
+            <div class="col-8 col-md-5 ps-md-0 ">
                 <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required>
             </div>
         </div>
@@ -111,7 +113,6 @@
                         Otro
                     </label><br>
             
-                    <button type="submit" class="boton-enviar">Enviar</button>
                 </form> 
             </div>
         </div>
@@ -119,16 +120,21 @@
 
 
 
-
         <!-- Escriba su Mensaje -->        
-        <div class="contacto row mb-3 ps-3 align-items-center">
+        <div class="contacto row mb-3 ps-3 ">
             <label for="mensaje" class="form-label col-12 col-md-2"><h5>Escriba su Mensaje:</h5></label>
-            <div class="col-6 col-md-5">
+            <div class="col-8 col-md-5 ps-md-0 ">
                 <textarea class="form-control" id="mensaje" name="mensaje" maxlength="244" placeholder="Escribí tu mensaje (máx. 244 caracteres)" rows="4" required></textarea>
+            </div>
         </div>
 
-
-        
+        <!-- Boton Enviar -->  
+        <div class="contacto row mb-3 ps-3 ">
+            <label for="mensaje" class="form-label col-12 col-md-2"></label>
+            <div class="col-8 col-md-5 ps-md-0 ">
+                <button type="submit" class="boton-enviar col-4 col-md-3 ms-0">Enviar</button>
+            </div>
+        </div>
     
         
     </main>
