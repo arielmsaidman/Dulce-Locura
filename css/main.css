@@ -9,9 +9,9 @@
 
 /***HEADER**************************************************************************************/
 header .titulo-principal {
-  color: black;
-  font-family: Candara, Calibri, Segoe UI, Arial, sans-serif;
-  font-size: 4rem;
+  color: rgb(129, 72, 134);
+  font-family: Candara;
+  font-size: 3rem;
 }
 header {
   display: flex;
@@ -257,7 +257,8 @@ footer {
 /***TITULO PRINCIPAL*******************/
 @media (max-width: 768px) {
   header .titulo-principal {
-    font-size: 36px;
+    font-family: Candara;
+    font-size: 25px;
   }
 }
 /*************INDEX*****************/
