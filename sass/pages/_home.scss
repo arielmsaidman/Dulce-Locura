@@ -61,6 +61,47 @@ header{
 
 
 main{
+    .portada-traje-de-banio{
+        position: relative;
+    }
+    .portada-traje-de-banio{
+        img{
+            width: 100%;
+        height: auto;
+        display: block;
+        }
+    }
+    .titulo-portada-trajes-de-baño {
+        position: absolute;
+        top: 18%;
+        left: 5%;
+        font-size: 4rem;
+        font-weight: 500;
+        color: black;
+        letter-spacing: 5px;
+        }
+
+    .portada-sweaters {
+        position: relative;
+        }
+
+        .portada-sweaters {
+            img {
+        width: 100%;
+        height: auto;
+        display: block;
+        }}
+
+        /* H1 sobre la imagen */
+        .titulo-portada-sweater {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        font-size: 4rem;
+        font-weight: 500;
+        color: black;
+        letter-spacing: 5px;
+        }
    
     section{
         img{

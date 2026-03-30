@@ -42,6 +42,43 @@ header .yellow-bg li a:active {
   background-color: #e4e4db;
 }
 
+main .portada-traje-de-banio {
+  position: relative;
+}
+main .portada-traje-de-banio img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+main .titulo-portada-trajes-de-baño {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  font-size: 4rem;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 5px;
+}
+main .portada-sweaters {
+  position: relative;
+}
+main .portada-sweaters img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+main {
+  /* H1 sobre la imagen */
+}
+main .titulo-portada-sweater {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  font-size: 4rem;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 5px;
+}
 main section img .portada {
   width: 100%;
   height: auto;
@@ -259,6 +296,13 @@ footer {
   header .titulo-principal {
     font-family: Candara;
     font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  main .titulo-portada {
+    font-size: 2rem;
+    top: 20%;
+    left: 5%;
   }
 }
 /*************INDEX*****************/
