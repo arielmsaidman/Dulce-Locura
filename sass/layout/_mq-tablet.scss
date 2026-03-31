@@ -58,6 +58,9 @@
                 }
             }
         }
+        .titulo-portada-conjuntos-deportivos {
+            @include titulo-portada-mq(3rem,18%,5%);
+        }
     }
 }
 
@@ -88,6 +91,16 @@
                     @include image-productos;
                 }
             }
+        }
+    }
+}
+
+/*****CONTACTO***********************/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    main{
+        .titulo-portada-contacto {
+            @include titulo-portada(18%,5%,4rem,black);
         }
     }
 }

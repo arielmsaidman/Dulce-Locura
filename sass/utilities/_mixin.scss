@@ -32,7 +32,26 @@
     margin: 0 auto;
     border: 2px solid black
 }
+
+@mixin relative{
+    position: relative; 
+}
  
+@mixin titulo-portada($top,$left,$font-size,$color){
+    position: absolute;
+    top: $top;
+    left: $left;
+    font-size: $font-size;
+    font-weight: 500;
+    color: $color;
+    letter-spacing: 5px;
+}
+
+@mixin titulo-portada-mq($font-size,$top,$left){
+    font-size: $font-size;
+    top: $top;
+    left: $left;
+}
 
 
 

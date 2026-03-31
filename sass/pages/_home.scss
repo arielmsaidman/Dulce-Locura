@@ -61,47 +61,7 @@ header{
 
 
 main{
-    .portada-traje-de-banio{
-        position: relative;
-    }
-    .portada-traje-de-banio{
-        img{
-            width: 100%;
-        height: auto;
-        display: block;
-        }
-    }
-    .titulo-portada-trajes-de-baño {
-        position: absolute;
-        top: 18%;
-        left: 5%;
-        font-size: 4rem;
-        font-weight: 500;
-        color: black;
-        letter-spacing: 5px;
-        }
-
-    .portada-sweaters {
-        position: relative;
-        }
-
-        .portada-sweaters {
-            img {
-        width: 100%;
-        height: auto;
-        display: block;
-        }}
-
-        /* H1 sobre la imagen */
-        .titulo-portada-sweater {
-        position: absolute;
-        top: 30%;
-        left: 5%;
-        font-size: 4rem;
-        font-weight: 500;
-        color: black;
-        letter-spacing: 5px;
-        }
+     
    
     section{
         img{
@@ -139,9 +99,7 @@ main{
                     transform: scale(1.1);
                 }
             }
-
         }
-
     }
 
     /****PRODUCTOS DESTACADOS EN LA PAGINA PRINCIPAL****************************************************************/
@@ -180,7 +138,6 @@ main{
                 display: block; /*define el span*/
             }
         }          
-        
     }
 
     .descripcion{
@@ -188,17 +145,22 @@ main{
         text-align: justify;
     }
 
-
-    
     section { 
         img {
             @include image;
-           }
-
+        }
     }
-
-
     /******PAGINA DE TRAJES DE BAÑO****************************************************************************/
+    .portada-traje-de-banio{
+        @include relative;
+        img{
+            @include image;
+        }
+    }
+    .titulo-portada-trajes-de-banio {
+        @include titulo-portada(18%,5%,5rem,black);
+    }
+    
     .menu-principal-trajes-de-banio {
         display: grid;
         @include grilla(repeat(3, 1fr),repeat(2, auto));/* 2 filas * 3 columnas*/
@@ -214,7 +176,20 @@ main{
     }
     
     /**********PAGINA DE CONJUNTOS DEPORTIVOS***********************************************************/
+    .portada-conjuntos-deportivos {
+        @include relative;
+        img {
+            @include image;
+        }   
+    }
 
+    .titulo-portada-conjuntos-deportivos {
+        @include titulo-portada(12%,5%,4rem,$letter-colour);
+        span{
+            display: block;/*hace que el "CONJUNTOs DEPORTIVO" este en dos renglones*/
+        }
+    }
+    
     .menu-principal-conjuntos-deportivos {
         display: grid;
         @include grilla(repeat(3, 1fr),repeat(2, auto));/* 2 filas * 3 columnas*/
@@ -231,6 +206,17 @@ main{
 
     /**********PAGINA DE SWEATERS***********************************************************/
 
+    .portada-sweaters {
+        @include relative;
+        img {
+            @include image;
+        }   
+    }
+
+    .titulo-portada-sweaters {
+        @include titulo-portada(30%,5%,5rem,black);
+    }
+
     .menu-principal-sweaters {
         display: grid;
         @include grilla(repeat(3, 1fr),repeat(2, auto));/* 2 filas * 3 columnas*/
@@ -246,7 +232,17 @@ main{
     }
 
     /**********PAGINA DE ACCESORIOS***********************************************************/
+    .portada-accesorios {
+        @include relative;
+        img {
+            @include image;
+        }   
+    }
 
+    .titulo-portada-accesorios {
+        @include titulo-portada(30%,5%,5rem,black);
+    }
+    
     .menu-principal-accesorios{
         display: grid;
         @include grilla(repeat(3, 1fr),repeat(2, auto));/* 2 filas * 3 columnas*/
@@ -259,6 +255,17 @@ main{
                 @include image-productos;
             }
         }
+    }
+/**********PAGINA DE CONTACTO**************************/
+    .portada-contacto{
+        @include relative;
+        img{
+            @include image;
+        }
+    }
+
+    .titulo-portada-contacto {
+        @include titulo-portada(18%,5%,5rem,black);
     }
 
     .email{
@@ -287,9 +294,7 @@ main{
     }
 }   
  
-    
-
-          /*****MENU DEL FONDO *********************************************************************/
+/*****MENU DEL FONDO *********************************************************************/
 
 .menu-abajo{
         background-color: $back-ground-menu-abajo;

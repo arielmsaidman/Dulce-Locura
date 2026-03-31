@@ -19,18 +19,6 @@
     }
 }
 
-@media (max-width: 768px) {
-    main{
-        .titulo-portada {
-            font-size: 2rem;
-            top: 20%;
-            left: 5%;
-        }
-    }
-}
-
-
-
 
 /*************INDEX*****************/
 @media (max-width: 768px) {
@@ -47,9 +35,6 @@
         }
     }
 }
-
-     
-        
 
 /*****PRODUCTOS DESTACADOS****************/
 @media (max-width: 768px) {
@@ -104,6 +89,10 @@
                 @include image-productos;
             }
         }
+
+        .titulo-portada-trajes-de-banio {
+            @include titulo-portada-mq(18px,18%,5%);
+        }
     }
 }
 
@@ -122,6 +111,10 @@
                 @include image-productos;
             }
         }
+
+        .titulo-portada-conjuntos-deportivos {
+            @include titulo-portada-mq(1rem,18%,5%);
+        }
     }
 }
 
@@ -134,17 +127,22 @@
             @include separacion;
         }
 
-     div{
+        div{
             @include align;
              
             img {
                 @include image-productos;
             }
         }
+        
+        .titulo-portada-sweaters {
+            @include titulo-portada-mq(2rem,20%,5%);
+        }
     }
 }
 
-/****CONJUNTOS ACCESORIOS**********/
+
+/********** ACCESORIOS**********/
 
 @media (max-width: 768px) {
     main{
@@ -160,26 +158,32 @@
                 @include image-productos;
             }
         }
+
+        .titulo-portada-accesorios {
+            @include titulo-portada-mq(2rem,18%,5%);
+        }
+        
     }
 }
 
 /****CONTACTO**********/
 @media (max-width: 768px) {
-  .contacto {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    main{
+        .contacto{
+        flex-direction: column;
+        align-items: flex-start;
+        input {
+            max-width: 100%;
+            }
+        }
 
-  .contacto input {
-    max-width: 100%;
-  }
+        .mensaje{
+            display: flex;
+        }
 
-}
-
-@media (max-width: 768px){
-    .mensaje{
-        display: flex;
-       
+        .titulo-portada-contacto {
+            @include titulo-portada-mq(23px,20%,5%);
+        }
     }
 }
 
