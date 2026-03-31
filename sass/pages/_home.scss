@@ -48,19 +48,70 @@ header{
                 }   
         }
     }
-
-
 }
 
 /**FIN HEADER*****************************************************************************/
 
-/*********FONDO PAGINA CONTACTO****************/
-.bg-contacto{
-        background-color: #e4e4db;
-    }
+
 
 
 main{
+     
+    /***para acomodar "TRAJES DE BAÑO" dentro de la casilla, en la pagina del Index*/
+    .menu-trajes-de-banio{
+        @include relative;
+        img{
+            @include image;
+        }
+    }
+    .titulo-menu-trajes-de-banio {
+        @include titulo-portada(18%,5%,5rem,black);
+        span{
+            display: block;/*hace que el "CONJUNTOs DEPORTIVO" este en dos renglones*/
+        }
+    }   
+
+
+     /***para acomodar "CONJUNTOS DEPORTIVOS" dentro de la casilla, en la pagina del Index*/
+    .menu-conjuntos-deportivos{
+        @include relative;
+        img{
+            @include image;
+        }
+    }
+    .titulo-menu-conjuntos-deportivos {
+        @include titulo-portada(18%,5%,5rem,black);
+        span{
+            display: block;/*hace que el "CONJUNTOs DEPORTIVO" este en dos renglones*/
+        }
+    }   
+
+
+    /***para acomodar "SWEATERS" dentro de la casilla, en la pagina del Index*/
+    .menu-sweaters{
+        @include relative;
+        img{
+            @include image;
+        }
+    }
+    .titulo-menu-sweaters {
+        @include titulo-portada(18%,5%,5rem,black);
+    }   
+
+
+    /***para acomodar "ACCESORIOS" dentro de la casilla, en la pagina del Index*/
+    .menu-accesorios{
+        @include relative;
+        img{
+            @include image;
+        }
+    }
+    .titulo-menu-accesorios {
+        @include titulo-portada(18%,5%,5rem,black);
+    }  
+
+
+
      
    
     section{
@@ -77,7 +128,7 @@ main{
     }
 
     svg:hover{
-        transform: scale(1.1);
+        transform: scale(1.01);
     }
 
     .menu-principal{
@@ -96,7 +147,7 @@ main{
                 object-fit: contain;
 
                 &:hover{
-                    transform: scale(1.1);
+                    transform: scale(1.01);
                 }
             }
         }
@@ -293,6 +344,10 @@ main{
         border-radius: 8px;         
     }
 }   
+/*********FONDO PAGINA CONTACTO****************/
+.bg-contacto{
+        background-color: #e4e4db;
+    }
  
 /*****MENU DEL FONDO *********************************************************************/
 

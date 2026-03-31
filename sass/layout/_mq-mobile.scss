@@ -33,6 +33,23 @@
             display: block;
             margin: 0 auto;
         }
+
+        /***estas 4 clases es para que entre los titulos en los cuadros*/
+        .titulo-menu-trajes-de-banio {
+            @include titulo-portada-mq(2rem,18%,15%);
+        }
+
+        .titulo-menu-conjuntos-deportivos {
+            @include titulo-portada-mq(2rem,18%,15%);
+        }
+
+        .titulo-menu-sweaters {
+            @include titulo-portada-mq(2rem,18%,15%);
+        }
+
+        .titulo-menu-accesorios {
+            @include titulo-portada-mq(2rem,18%,15%);
+        }
     }
 }
 

@@ -37,11 +37,92 @@ header .yellow-bg li a:active {
 }
 
 /**FIN HEADER*****************************************************************************/
-/*********FONDO PAGINA CONTACTO****************/
-.bg-contacto {
-  background-color: #e4e4db;
+main {
+  /***para acomodar "TRAJES DE BAÑO" dentro de la casilla, en la pagina del Index*/
 }
-
+main .menu-trajes-de-banio {
+  position: relative;
+}
+main .menu-trajes-de-banio img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+main .titulo-menu-trajes-de-banio {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  font-size: 5rem;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 5px;
+}
+main .titulo-menu-trajes-de-banio span {
+  display: block; /*hace que el "CONJUNTOs DEPORTIVO" este en dos renglones*/
+}
+main {
+  /***para acomodar "CONJUNTOS DEPORTIVOS" dentro de la casilla, en la pagina del Index*/
+}
+main .menu-conjuntos-deportivos {
+  position: relative;
+}
+main .menu-conjuntos-deportivos img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+main .titulo-menu-conjuntos-deportivos {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  font-size: 5rem;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 5px;
+}
+main .titulo-menu-conjuntos-deportivos span {
+  display: block; /*hace que el "CONJUNTOs DEPORTIVO" este en dos renglones*/
+}
+main {
+  /***para acomodar "SWEATERS" dentro de la casilla, en la pagina del Index*/
+}
+main .menu-sweaters {
+  position: relative;
+}
+main .menu-sweaters img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+main .titulo-menu-sweaters {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  font-size: 5rem;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 5px;
+}
+main {
+  /***para acomodar "ACCESORIOS" dentro de la casilla, en la pagina del Index*/
+}
+main .menu-accesorios {
+  position: relative;
+}
+main .menu-accesorios img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+main .titulo-menu-accesorios {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  font-size: 5rem;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 5px;
+}
 main section img .portada {
   width: 100%;
   height: auto;
@@ -52,7 +133,7 @@ main svg {
   height: 50px;
 }
 main svg:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 main .menu-principal {
   padding-top: 50px;
@@ -68,7 +149,7 @@ main .menu-principal div img { /* fuerzo a que las imagenes entren en su contene
   object-fit: contain;
 }
 main .menu-principal div img:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 main {
   /****PRODUCTOS DESTACADOS EN LA PAGINA PRINCIPAL****************************************************************/
@@ -312,6 +393,11 @@ main .boton-enviar:active {
   border-radius: 8px;
 }
 
+/*********FONDO PAGINA CONTACTO****************/
+.bg-contacto {
+  background-color: #e4e4db;
+}
+
 /*****MENU DEL FONDO *********************************************************************/
 .menu-abajo {
   background-color: rgb(71, 72, 82);
@@ -363,6 +449,29 @@ footer {
     width: 80%;
     display: block;
     margin: 0 auto;
+  }
+  main {
+    /***estas 4 clases es para que entre los titulos en los cuadros*/
+  }
+  main .titulo-menu-trajes-de-banio {
+    font-size: 2rem;
+    top: 18%;
+    left: 15%;
+  }
+  main .titulo-menu-conjuntos-deportivos {
+    font-size: 2rem;
+    top: 18%;
+    left: 15%;
+  }
+  main .titulo-menu-sweaters {
+    font-size: 2rem;
+    top: 18%;
+    left: 15%;
+  }
+  main .titulo-menu-accesorios {
+    font-size: 2rem;
+    top: 18%;
+    left: 15%;
   }
 }
 /*****PRODUCTOS DESTACADOS****************/
