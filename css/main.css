@@ -465,22 +465,22 @@ footer {
     letter-spacing: 5px;
   }
   main .titulo-menu-conjuntos-deportivos {
-    font-size: 2rem;
+    font-size: 30px;
     top: 18%;
-    left: 15%;
-    letter-spacing: 5px;
+    left: 12%;
+    letter-spacing: 0px;
   }
   main .titulo-menu-sweaters {
     font-size: 2rem;
-    top: 18%;
-    left: 15%;
-    letter-spacing: 5px;
+    top: 15%;
+    left: 12%;
+    letter-spacing: 3px;
   }
   main .titulo-menu-accesorios {
-    font-size: 2rem;
-    top: 18%;
-    left: 15%;
-    letter-spacing: 5px;
+    font-size: 26px;
+    top: 21%;
+    left: 12%;
+    letter-spacing: 0px;
   }
 }
 /*****PRODUCTOS DESTACADOS****************/
@@ -530,11 +530,11 @@ footer {
     margin: 0 auto;
     border: 2px solid black;
   }
-  main .titulo-menu-trajes-de-banio {
+  main .titulo-portada-trajes-de-banio {
     position: absolute;
-    top: 22%;
-    left: 15%;
-    font-size: 185%;
+    top: 17%;
+    left: 5%;
+    font-size: 120%;
     font-weight: 400;
     color: black;
     letter-spacing: 6px;
@@ -558,17 +558,17 @@ footer {
     margin: 0 auto;
     border: 2px solid black;
   }
-  main .titulo-menu-conjuntos-deportivos {
+  main .titulo-portada-conjuntos-deportivos {
     position: absolute;
     top: 18%;
-    left: 13%;
+    left: 5%;
     font-size: 155%;
     font-weight: 400;
-    color: black;
+    color: whitesmoke;
     letter-spacing: 3px;
   }
 }
-/****CONJUNTOS SWEATERS**********/
+/*************SWEATERS**********/
 @media (max-width: 768px) {
   main .menu-principal-sweaters {
     grid-template-columns: 1fr;
@@ -586,14 +586,14 @@ footer {
     margin: 0 auto;
     border: 2px solid black;
   }
-  main .titulo-menu-sweaters {
+  main .titulo-portada-sweaters {
     position: absolute;
-    top: 14%;
-    left: 15%;
-    font-size: 195%;
+    top: 18%;
+    left: 5%;
+    font-size: 180%;
     font-weight: 400;
     color: black;
-    letter-spacing: 0px;
+    letter-spacing: 3px;
   }
 }
 /********** ACCESORIOS**********/
@@ -614,14 +614,14 @@ footer {
     margin: 0 auto;
     border: 2px solid black;
   }
-  main .titulo-menu-accesorios {
+  main .titulo-portada-accesorios {
     position: absolute;
-    top: 22%;
-    left: 12%;
-    font-size: 150%;
+    top: 18%;
+    left: 5%;
+    font-size: 180%;
     font-weight: 400;
     color: black;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
   }
 }
 /****CONTACTO**********/
@@ -637,10 +637,13 @@ footer {
     display: flex;
   }
   main .titulo-portada-contacto {
-    font-size: 23px;
-    top: 20%;
+    position: absolute;
+    top: 18%;
     left: 5%;
-    letter-spacing: 5px;
+    font-size: 180%;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 3px;
   }
 }
 /*****MENU DE ABAJO**************************/
@@ -685,10 +688,19 @@ footer {
     position: absolute;
     top: 12%;
     left: 5%;
-    font-size: 300%;
+    font-size: 250%;
     font-weight: 400;
     color: black;
     letter-spacing: 5px;
+  }
+  main .titulo-portada-trajes-de-banio {
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    font-size: 3rem;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 6px;
   }
 }
 /****CONJUNTOS DEPORTIVOS**********/
@@ -712,6 +724,15 @@ footer {
     color: black;
     letter-spacing: 0px;
   }
+  main .titulo-portada-conjuntos-deportivos {
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    font-size: 250%;
+    font-weight: 400;
+    color: whitesmoke;
+    letter-spacing: 6px;
+  }
 }
 /****SWEATERS**********/
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -733,6 +754,15 @@ footer {
     font-weight: 400;
     color: black;
     letter-spacing: 0px;
+  }
+  main .titulo-portada-sweaters {
+    position: absolute;
+    top: 23%;
+    left: 5%;
+    font-size: 3rem %;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 6px;
   }
 }
 /****ACCESORIOS**********/
@@ -756,6 +786,15 @@ footer {
     color: black;
     letter-spacing: 0px;
   }
+  main .titulo-portada-accesorios {
+    position: absolute;
+    top: 23%;
+    left: 5%;
+    font-size: 3rem;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 6px;
+  }
 }
 /*****CONTACTO***********************/
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -763,7 +802,7 @@ footer {
     position: absolute;
     top: 18%;
     left: 5%;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: black;
     letter-spacing: 10px;

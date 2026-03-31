@@ -40,15 +40,15 @@
         }
 
         .titulo-menu-conjuntos-deportivos {
-            @include titulo-portada-mq(2rem,18%,15%,5px);
+            @include titulo-portada-mq(30px,18%,12%,0px);
         }
 
         .titulo-menu-sweaters {
-            @include titulo-portada-mq(2rem,18%,15%,5px);
+            @include titulo-portada-mq(2rem,15%,12%,3px);
         }
 
         .titulo-menu-accesorios {
-            @include titulo-portada-mq(2rem,18%,15%,5px);
+            @include titulo-portada-mq(26px,21%,12%,0px);
         }
     }
 }
@@ -107,8 +107,8 @@
             }
         }
 
-        .titulo-menu-trajes-de-banio {
-            @include titulo-portada(22%,15%,185%,black,6px);
+        .titulo-portada-trajes-de-banio {
+            @include titulo-portada(17%,5%,120%,black,6px);
         }
     }
 }
@@ -129,13 +129,13 @@
             }
         }
 
-        .titulo-menu-conjuntos-deportivos {
-        @include titulo-portada(18%,13%,155%,black,3px);
+        .titulo-portada-conjuntos-deportivos {
+        @include titulo-portada(18%,5%,155%,$letter-colour,3px);
         }   
     }
 }
 
-/****CONJUNTOS SWEATERS**********/
+/*************SWEATERS**********/
 
 @media (max-width: 768px) {
     main{
@@ -152,8 +152,8 @@
             }
         }
         
-         .titulo-menu-sweaters {
-            @include titulo-portada(14%,15%,195%,black,0px);
+         .titulo-portada-sweaters {
+            @include titulo-portada(18%,5%,180%,black,3px);
         }
     }
 }
@@ -176,8 +176,8 @@
             }
         }
 
-        .titulo-menu-accesorios {
-            @include titulo-portada(22%,12%,150%,black,1px);
+        .titulo-portada-accesorios {
+            @include titulo-portada(18%,5%,180%,black,3px);
         }
         
     }
@@ -199,7 +199,7 @@
         }
 
         .titulo-portada-contacto {
-            @include titulo-portada-mq(23px,20%,5%,5px);
+            @include titulo-portada(18%,5%,180%,black,3px);;
         }
     }
 }
