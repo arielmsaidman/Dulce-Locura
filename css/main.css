@@ -50,12 +50,12 @@ main .menu-trajes-de-banio img {
 }
 main .titulo-menu-trajes-de-banio {
   position: absolute;
-  top: 18%;
+  top: 15%;
   left: 5%;
-  font-size: 5rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 400;
   color: black;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 main .titulo-menu-trajes-de-banio span {
   display: block; /*hace que el "CONJUNTOs DEPORTIVO" este en dos renglones*/
@@ -74,9 +74,9 @@ main .menu-conjuntos-deportivos img {
 main .titulo-menu-conjuntos-deportivos {
   position: absolute;
   top: 18%;
-  left: 5%;
-  font-size: 5rem;
-  font-weight: 500;
+  left: 4%;
+  font-size: 3rem;
+  font-weight: 400;
   color: black;
   letter-spacing: 5px;
 }
@@ -96,12 +96,12 @@ main .menu-sweaters img {
 }
 main .titulo-menu-sweaters {
   position: absolute;
-  top: 18%;
-  left: 5%;
-  font-size: 5rem;
-  font-weight: 500;
+  top: 10%;
+  left: 4%;
+  font-size: 4rem;
+  font-weight: 400;
   color: black;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 main {
   /***para acomodar "ACCESORIOS" dentro de la casilla, en la pagina del Index*/
@@ -117,9 +117,9 @@ main .menu-accesorios img {
 main .titulo-menu-accesorios {
   position: absolute;
   top: 18%;
-  left: 5%;
-  font-size: 5rem;
-  font-weight: 500;
+  left: 2%;
+  font-size: 44px;
+  font-weight: 400;
   color: black;
   letter-spacing: 5px;
 }
@@ -212,9 +212,9 @@ main .titulo-portada-trajes-de-banio {
   top: 18%;
   left: 5%;
   font-size: 5rem;
-  font-weight: 500;
+  font-weight: 400;
   color: black;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 main .menu-principal-trajes-de-banio {
   display: grid;
@@ -250,9 +250,9 @@ main .titulo-portada-conjuntos-deportivos {
   top: 12%;
   left: 5%;
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: 400;
   color: whitesmoke;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 main .titulo-portada-conjuntos-deportivos span {
   display: block; /*hace que el "CONJUNTOs DEPORTIVO" este en dos renglones*/
@@ -291,9 +291,9 @@ main .titulo-portada-sweaters {
   top: 30%;
   left: 5%;
   font-size: 5rem;
-  font-weight: 500;
+  font-weight: 400;
   color: black;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 main .menu-principal-sweaters {
   display: grid;
@@ -329,9 +329,9 @@ main .titulo-portada-accesorios {
   top: 30%;
   left: 5%;
   font-size: 5rem;
-  font-weight: 500;
+  font-weight: 400;
   color: black;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 main .menu-principal-accesorios {
   display: grid;
@@ -367,9 +367,9 @@ main .titulo-portada-contacto {
   top: 18%;
   left: 5%;
   font-size: 5rem;
-  font-weight: 500;
+  font-weight: 400;
   color: black;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 main .email {
   display: flex;
@@ -391,6 +391,11 @@ main .boton-enviar:active {
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
+}
+main .formato-fuente-contacto {
+  font-size: 1.2em;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
 }
 
 /*********FONDO PAGINA CONTACTO****************/
@@ -457,21 +462,25 @@ footer {
     font-size: 2rem;
     top: 18%;
     left: 15%;
+    letter-spacing: 5px;
   }
   main .titulo-menu-conjuntos-deportivos {
     font-size: 2rem;
     top: 18%;
     left: 15%;
+    letter-spacing: 5px;
   }
   main .titulo-menu-sweaters {
     font-size: 2rem;
     top: 18%;
     left: 15%;
+    letter-spacing: 5px;
   }
   main .titulo-menu-accesorios {
     font-size: 2rem;
     top: 18%;
     left: 15%;
+    letter-spacing: 5px;
   }
 }
 /*****PRODUCTOS DESTACADOS****************/
@@ -521,10 +530,14 @@ footer {
     margin: 0 auto;
     border: 2px solid black;
   }
-  main .titulo-portada-trajes-de-banio {
-    font-size: 18px;
-    top: 18%;
-    left: 5%;
+  main .titulo-menu-trajes-de-banio {
+    position: absolute;
+    top: 22%;
+    left: 15%;
+    font-size: 185%;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 6px;
   }
 }
 /****CONJUNTOS DEPORTIVOS**********/
@@ -545,10 +558,14 @@ footer {
     margin: 0 auto;
     border: 2px solid black;
   }
-  main .titulo-portada-conjuntos-deportivos {
-    font-size: 1rem;
+  main .titulo-menu-conjuntos-deportivos {
+    position: absolute;
     top: 18%;
-    left: 5%;
+    left: 13%;
+    font-size: 155%;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 3px;
   }
 }
 /****CONJUNTOS SWEATERS**********/
@@ -569,10 +586,14 @@ footer {
     margin: 0 auto;
     border: 2px solid black;
   }
-  main .titulo-portada-sweaters {
-    font-size: 2rem;
-    top: 20%;
-    left: 5%;
+  main .titulo-menu-sweaters {
+    position: absolute;
+    top: 14%;
+    left: 15%;
+    font-size: 195%;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 0px;
   }
 }
 /********** ACCESORIOS**********/
@@ -593,10 +614,14 @@ footer {
     margin: 0 auto;
     border: 2px solid black;
   }
-  main .titulo-portada-accesorios {
-    font-size: 2rem;
-    top: 18%;
-    left: 5%;
+  main .titulo-menu-accesorios {
+    position: absolute;
+    top: 22%;
+    left: 12%;
+    font-size: 150%;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 1px;
   }
 }
 /****CONTACTO**********/
@@ -615,6 +640,7 @@ footer {
     font-size: 23px;
     top: 20%;
     left: 5%;
+    letter-spacing: 5px;
   }
 }
 /*****MENU DE ABAJO**************************/
@@ -655,6 +681,15 @@ footer {
     margin: 0 auto;
     border: 2px solid black;
   }
+  main .titulo-menu-trajes-de-banio {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    font-size: 300%;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 5px;
+  }
 }
 /****CONJUNTOS DEPORTIVOS**********/
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -668,10 +703,14 @@ footer {
     margin: 0 auto;
     border: 2px solid black;
   }
-  main .titulo-portada-conjuntos-deportivos {
-    font-size: 3rem;
-    top: 18%;
-    left: 5%;
+  main .titulo-menu-conjuntos-deportivos {
+    position: absolute;
+    top: 14%;
+    left: 3%;
+    font-size: 240%;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 0px;
   }
 }
 /****SWEATERS**********/
@@ -686,6 +725,15 @@ footer {
     margin: 0 auto;
     border: 2px solid black;
   }
+  main .titulo-menu-sweaters {
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    font-size: 3rem;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 0px;
+  }
 }
 /****ACCESORIOS**********/
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -699,6 +747,15 @@ footer {
     margin: 0 auto;
     border: 2px solid black;
   }
+  main .titulo-menu-accesorios {
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    font-size: 200%;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 0px;
+  }
 }
 /*****CONTACTO***********************/
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -707,9 +764,9 @@ footer {
     top: 18%;
     left: 5%;
     font-size: 4rem;
-    font-weight: 500;
+    font-weight: 400;
     color: black;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
   }
 }
 

@@ -65,7 +65,7 @@ main{
         }
     }
     .titulo-menu-trajes-de-banio {
-        @include titulo-portada(18%,5%,5rem,black);
+        @include titulo-portada(15%,5%,4rem,black,10px);
         span{
             display: block;/*hace que el "CONJUNTOs DEPORTIVO" este en dos renglones*/
         }
@@ -80,7 +80,7 @@ main{
         }
     }
     .titulo-menu-conjuntos-deportivos {
-        @include titulo-portada(18%,5%,5rem,black);
+        @include titulo-portada(18%,4%,3rem,black,5px);
         span{
             display: block;/*hace que el "CONJUNTOs DEPORTIVO" este en dos renglones*/
         }
@@ -95,7 +95,7 @@ main{
         }
     }
     .titulo-menu-sweaters {
-        @include titulo-portada(18%,5%,5rem,black);
+        @include titulo-portada(10%,4%,4rem,black,10px);
     }   
 
 
@@ -107,7 +107,7 @@ main{
         }
     }
     .titulo-menu-accesorios {
-        @include titulo-portada(18%,5%,5rem,black);
+        @include titulo-portada(18%,2%,44px,black,5px);
     }  
 
 
@@ -209,7 +209,7 @@ main{
         }
     }
     .titulo-portada-trajes-de-banio {
-        @include titulo-portada(18%,5%,5rem,black);
+        @include titulo-portada(18%,5%,5rem,black,10px);
     }
     
     .menu-principal-trajes-de-banio {
@@ -235,7 +235,7 @@ main{
     }
 
     .titulo-portada-conjuntos-deportivos {
-        @include titulo-portada(12%,5%,4rem,$letter-colour);
+        @include titulo-portada(12%,5%,4rem,$letter-colour,10px);
         span{
             display: block;/*hace que el "CONJUNTOs DEPORTIVO" este en dos renglones*/
         }
@@ -265,7 +265,7 @@ main{
     }
 
     .titulo-portada-sweaters {
-        @include titulo-portada(30%,5%,5rem,black);
+        @include titulo-portada(30%,5%,5rem,black,10px);
     }
 
     .menu-principal-sweaters {
@@ -291,7 +291,7 @@ main{
     }
 
     .titulo-portada-accesorios {
-        @include titulo-portada(30%,5%,5rem,black);
+        @include titulo-portada(30%,5%,5rem,black,10px);
     }
     
     .menu-principal-accesorios{
@@ -316,7 +316,7 @@ main{
     }
 
     .titulo-portada-contacto {
-        @include titulo-portada(18%,5%,5rem,black);
+        @include titulo-portada(18%,5%,5rem,black,10px);
     }
 
     .email{
@@ -343,6 +343,14 @@ main{
         border: none;              
         border-radius: 8px;         
     }
+
+    .formato-fuente-contacto{
+        font-size: 1.2em;
+        //font-weight: bold;
+        margin-top: 0.3em;
+        margin-bottom: 1em;
+    }
+
 }   
 /*********FONDO PAGINA CONTACTO****************/
 .bg-contacto{

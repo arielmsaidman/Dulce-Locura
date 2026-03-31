@@ -36,19 +36,19 @@
 
         /***estas 4 clases es para que entre los titulos en los cuadros*/
         .titulo-menu-trajes-de-banio {
-            @include titulo-portada-mq(2rem,18%,15%);
+            @include titulo-portada-mq(2rem,18%,15%,5px);
         }
 
         .titulo-menu-conjuntos-deportivos {
-            @include titulo-portada-mq(2rem,18%,15%);
+            @include titulo-portada-mq(2rem,18%,15%,5px);
         }
 
         .titulo-menu-sweaters {
-            @include titulo-portada-mq(2rem,18%,15%);
+            @include titulo-portada-mq(2rem,18%,15%,5px);
         }
 
         .titulo-menu-accesorios {
-            @include titulo-portada-mq(2rem,18%,15%);
+            @include titulo-portada-mq(2rem,18%,15%,5px);
         }
     }
 }
@@ -107,8 +107,8 @@
             }
         }
 
-        .titulo-portada-trajes-de-banio {
-            @include titulo-portada-mq(18px,18%,5%);
+        .titulo-menu-trajes-de-banio {
+            @include titulo-portada(22%,15%,185%,black,6px);
         }
     }
 }
@@ -129,9 +129,9 @@
             }
         }
 
-        .titulo-portada-conjuntos-deportivos {
-            @include titulo-portada-mq(1rem,18%,5%);
-        }
+        .titulo-menu-conjuntos-deportivos {
+        @include titulo-portada(18%,13%,155%,black,3px);
+        }   
     }
 }
 
@@ -152,8 +152,8 @@
             }
         }
         
-        .titulo-portada-sweaters {
-            @include titulo-portada-mq(2rem,20%,5%);
+         .titulo-menu-sweaters {
+            @include titulo-portada(14%,15%,195%,black,0px);
         }
     }
 }
@@ -176,8 +176,8 @@
             }
         }
 
-        .titulo-portada-accesorios {
-            @include titulo-portada-mq(2rem,18%,5%);
+        .titulo-menu-accesorios {
+            @include titulo-portada(22%,12%,150%,black,1px);
         }
         
     }
@@ -199,7 +199,7 @@
         }
 
         .titulo-portada-contacto {
-            @include titulo-portada-mq(23px,20%,5%);
+            @include titulo-portada-mq(23px,20%,5%,5px);
         }
     }
 }

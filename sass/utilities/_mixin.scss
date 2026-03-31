@@ -37,20 +37,21 @@
     position: relative; 
 }
  
-@mixin titulo-portada($top,$left,$font-size,$color){
+@mixin titulo-portada($top,$left,$font-size,$color,$letter-spacing){
     position: absolute;
     top: $top;
     left: $left;
     font-size: $font-size;
-    font-weight: 500;
+    font-weight: 400;
     color: $color;
-    letter-spacing: 5px;
+    letter-spacing: $letter-spacing;
 }
 
-@mixin titulo-portada-mq($font-size,$top,$left){
+@mixin titulo-portada-mq($font-size,$top,$left,$letter-spacing){
     font-size: $font-size;
     top: $top;
     left: $left;
+    letter-spacing: $letter-spacing;
 }
 
 

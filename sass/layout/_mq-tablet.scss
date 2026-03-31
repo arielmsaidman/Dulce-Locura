@@ -43,6 +43,9 @@
                 }
             }
         }
+        .titulo-menu-trajes-de-banio {
+            @include titulo-portada(12%,5%,300%,black,5px);
+        }
     }
 }
 
@@ -58,8 +61,8 @@
                 }
             }
         }
-        .titulo-portada-conjuntos-deportivos {
-            @include titulo-portada-mq(3rem,18%,5%);
+        .titulo-menu-conjuntos-deportivos {
+            @include titulo-portada(14%,3%,240%,black,0px);
         }
     }
 }
@@ -77,6 +80,9 @@
                 }
             }
         }
+        .titulo-menu-sweaters {
+            @include titulo-portada(8%,3%,3rem,black,0px);
+        }
     }
 }
 
@@ -92,6 +98,9 @@
                 }
             }
         }
+        .titulo-menu-accesorios {
+            @include titulo-portada(25%,2%,200%,black,0px);
+        }
     }
 }
 
@@ -100,7 +109,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     main{
         .titulo-portada-contacto {
-            @include titulo-portada(18%,5%,4rem,black);
+            @include titulo-portada(18%,5%,4rem,black,10px);
         }
     }
 }
